@@ -464,7 +464,6 @@
 			// Get the button that opens the modal
 			var btn = document.getElementById("add_data");
 			
-			
 			// When the user clicks the button, open the modal 
 			btn.onclick = function() {
 				initialize();
