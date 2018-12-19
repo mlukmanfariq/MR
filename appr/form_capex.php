@@ -507,7 +507,6 @@
 	           		}
 	            }); 
 			}
-
 			function cancel() {
 				modal.style.display = "none";				
 				initialize()				
