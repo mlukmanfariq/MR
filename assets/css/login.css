@@ -1,0 +1,27 @@
+.widget-box {
+	visibility: hidden;
+	position: fixed;
+	z-index: -5;
+	border-bottom: none;
+	box-shadow: none;
+	padding: 6px;
+	-moz-transform: scale(0, 1) translate(-150px);
+	-webkit-transform: scale(0, 1) translate(-150px);
+	-o-transform: scale(0, 1) translate(-150px);
+	-ms-transform: scale(0, 1) translate(-150px);
+	transform: scale(0, 1) translate(-150px)
+}
+.widget-box.visible {
+	visibility: visible;
+	position: relative;
+	z-index: auto;
+	-moz-transform: scale(1, 1) translate(0);
+	-webkit-transform: scale(1, 1) translate(0);
+	-o-transform: scale(1, 1) translate(0);
+	-ms-transform: scale(1, 1) translate(0);
+	transform: scale(1, 1) translate(0);
+	transition: transform .3s ease;
+	-moz-transition: -moz-transform .3s ease;
+	-webkit-transition: -webkit-transform .3s ease;
+	-o-transition: -o-transform .2s ease
+}

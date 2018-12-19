@@ -1,0 +1,66 @@
+@media print {
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    input[type="checkbox"][checked="checked"] {
+        display: inline-block;
+    }
+}
+table {
+	page-break-after:auto;
+	margin :5px;	
+	}
+
+th {
+	text-align: left;
+	}
+
+td {
+		padding :7px;
+		font-family: Arial;
+		font-size: 12pt;
+		page-break-inside:avoid;
+		page-break-after:auto;
+	}
+
+body{
+		padding-top: 20px;
+		padding-bottom: 50px;
+	}
+
+tr {
+		page-break-inside:avoid;
+		page-break-after:auto;
+	}
+
+@page{
+		margin-top:1.5cm
+	}
+
+div.options > label > input {
+	visibility: hidden;
+}
+
+div.options > label {
+	display: block;
+	margin: 0 0 0 -10px;
+	padding: 0 0 20px 0;  
+	height: 20px;
+	width: 150px;
+}
+
+div.options > input > img {
+	display: inline-block;
+	padding: 0px;
+	height:30px;
+	width:30px;
+	background: none;
+}
+
+div.options > input> input:checked +img {  
+	background-url: ('../../assets/img/ceklis.png';
+	background-repeat: no-repeat;
+	background-position:center center;
+	background-size:30px 30px;
+}
